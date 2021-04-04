@@ -45,7 +45,7 @@ async def getData(connection):
         except mariadb.Error as e:
              logging.error(e)
 
-        print(dt.datetime.now())
+        print(list_values[14])
         await asyncio.sleep(60)
 
 logging.basicConfig(filename='scraper_log.log', encoding='utf-8', level=logging.ERROR)
